@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="_Assignment_DbDataSet" targetNamespace="http://tempuri.org/_Assignment_DbDataSet.xsd" xmlns:mstns="http://tempuri.org/_Assignment_DbDataSet.xsd" xmlns="http://tempuri.org/_Assignment_DbDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="Assignment_DbConnectionString2" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="Assignment_DbConnectionString2 (MySettings)" PropertyReference="ApplicationSettings.Assignment.My.MySettings.GlobalReference.Default.Assignment_DbConnectionString2" Provider="System.Data.OleDb" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="tbl_reservationTableAdapter" GeneratorDataComponentClassName="tbl_reservationTableAdapter" Name="tbl_reservation" UserDataComponentName="tbl_reservationTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="Assignment_DbConnectionString2 (MySettings)" DbObjectName="tbl_reservation" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Chalet_Number, Chalet_Type, Check_In_Date, Check_Out_Date, GuestIC_PassportNo, Deposit, Total_Amount FROM tbl_reservation</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Chalet_Number" DataSetColumn="Chalet_Number" />
+              <Mapping SourceColumn="Chalet_Type" DataSetColumn="Chalet_Type" />
+              <Mapping SourceColumn="Check_In_Date" DataSetColumn="Check_In_Date" />
+              <Mapping SourceColumn="Check_Out_Date" DataSetColumn="Check_Out_Date" />
+              <Mapping SourceColumn="GuestIC_PassportNo" DataSetColumn="GuestIC_PassportNo" />
+              <Mapping SourceColumn="Deposit" DataSetColumn="Deposit" />
+              <Mapping SourceColumn="Total_Amount" DataSetColumn="Total_Amount" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="_Assignment_DbDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="_Assignment_DbDataSet" msprop:Generator_UserDSName="_Assignment_DbDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="tbl_reservation" msprop:Generator_TableClassName="tbl_reservationDataTable" msprop:Generator_TableVarName="tabletbl_reservation" msprop:Generator_TablePropName="tbl_reservation" msprop:Generator_RowDeletingName="tbl_reservationRowDeleting" msprop:Generator_RowChangingName="tbl_reservationRowChanging" msprop:Generator_RowEvHandlerName="tbl_reservationRowChangeEventHandler" msprop:Generator_RowDeletedName="tbl_reservationRowDeleted" msprop:Generator_UserTableName="tbl_reservation" msprop:Generator_RowChangedName="tbl_reservationRowChanged" msprop:Generator_RowEvArgName="tbl_reservationRowChangeEvent" msprop:Generator_RowClassName="tbl_reservationRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Chalet_Number" msprop:Generator_ColumnVarNameInTable="columnChalet_Number" msprop:Generator_ColumnPropNameInRow="Chalet_Number" msprop:Generator_ColumnPropNameInTable="Chalet_NumberColumn" msprop:Generator_UserColumnName="Chalet_Number" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Chalet_Type" msprop:Generator_ColumnVarNameInTable="columnChalet_Type" msprop:Generator_ColumnPropNameInRow="Chalet_Type" msprop:Generator_ColumnPropNameInTable="Chalet_TypeColumn" msprop:Generator_UserColumnName="Chalet_Type" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Check_In_Date" msprop:Generator_ColumnVarNameInTable="columnCheck_In_Date" msprop:Generator_ColumnPropNameInRow="Check_In_Date" msprop:Generator_ColumnPropNameInTable="Check_In_DateColumn" msprop:Generator_UserColumnName="Check_In_Date" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Check_Out_Date" msprop:Generator_ColumnVarNameInTable="columnCheck_Out_Date" msprop:Generator_ColumnPropNameInRow="Check_Out_Date" msprop:Generator_ColumnPropNameInTable="Check_Out_DateColumn" msprop:Generator_UserColumnName="Check_Out_Date" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="GuestIC_PassportNo" msprop:Generator_ColumnVarNameInTable="columnGuestIC_PassportNo" msprop:Generator_ColumnPropNameInRow="GuestIC_PassportNo" msprop:Generator_ColumnPropNameInTable="GuestIC_PassportNoColumn" msprop:Generator_UserColumnName="GuestIC_PassportNo" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Deposit" msprop:Generator_ColumnVarNameInTable="columnDeposit" msprop:Generator_ColumnPropNameInRow="Deposit" msprop:Generator_ColumnPropNameInTable="DepositColumn" msprop:Generator_UserColumnName="Deposit" type="xs:int" minOccurs="0" />
+              <xs:element name="Total_Amount" msprop:Generator_ColumnVarNameInTable="columnTotal_Amount" msprop:Generator_ColumnPropNameInRow="Total_Amount" msprop:Generator_ColumnPropNameInTable="Total_AmountColumn" msprop:Generator_UserColumnName="Total_Amount" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
